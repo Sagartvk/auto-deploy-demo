@@ -3,36 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto Deploy Demo</title>
+  <title>Auto Deploy CI/CD</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1d2b64, #f8cdda);
+      color: #fff;
       text-align: center;
-      padding-top: 100px;
     }
-    .box {
-      background: white;
-      width: 60%;
-      margin: auto;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px gray;
+
+    .container {
+      margin-top: 100px;
     }
+
     h1 {
-      color: #2c3e50;
+      font-size: 40px;
+      margin-bottom: 20px;
     }
+
     p {
       font-size: 18px;
-      color: #555;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      width: 60%;
+      margin: auto;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+      opacity: 0.7;
     }
   </style>
 </head>
+
 <body>
-  <div class="box">
-    <h1>Welcome to Sagar Ibrahim Auto Deploy Project</h1>
-    <p>This application is deployed automatically using GitHub Actions, Docker, and AWS EC2.</p>
-    <p>AutoDeployment Working</p>
+
+  <div class="container">
+    <div class="card">
+
+      <h1>🚀 CI/CD Pipeline Active</h1>
+
+      <p>
+        This application is automatically deployed using
+        <strong>GitHub Actions</strong>, <strong>Docker</strong>, and <strong>AWS EC2</strong>.
+      </p>
+
+      <p>
+        Every code push triggers a new build and updates the live application
+        without any manual intervention.
+      </p>
+
+      <div class="status">
+        ✅ Auto Deployment Successful
+      </div>
+
+      <div class="footer">
+        Created by Sagar Ibrahim | DevOps Demo Project
+      </div>
+
+    </div>
   </div>
+
 </body>
 </html>
