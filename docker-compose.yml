@@ -1,0 +1,7 @@
+services:
+  web:
+    image: sagaribrahim/auto-deploy-demo:latest
+    container_name: auto-deploy-demo
+    ports:
+      - "80:80"
+    restart: always
